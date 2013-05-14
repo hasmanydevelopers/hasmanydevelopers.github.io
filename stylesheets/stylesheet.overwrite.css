@@ -1,0 +1,17 @@
+img {
+  border: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+  -ms-box-shadow: none;
+}
+
+#project_title {
+  display: none;
+}
+
+#project_tagline {
+  text-align: right;
+  color: #A4ACAF;
+}
