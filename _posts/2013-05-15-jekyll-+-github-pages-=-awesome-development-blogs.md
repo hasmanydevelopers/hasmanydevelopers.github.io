@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: posts
 author: 
   name: p1nox
   web: http://github.com/p1nox

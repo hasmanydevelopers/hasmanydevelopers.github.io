@@ -7,6 +7,10 @@ img {
   -ms-box-shadow: none;
 }
 
+p img {
+  margin: 0px;
+}
+
 #project_title {
   display: none;
 }
