@@ -1,5 +1,6 @@
 # seo data
 main_title: "has_many :developers"
+company: "has_many :developers"
 description: "has_many :developers : web development blog"
 keywords: 
   - Coding
