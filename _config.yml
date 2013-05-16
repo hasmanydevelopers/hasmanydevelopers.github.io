@@ -1,7 +1,19 @@
+# seo data
+main_title: "has_many :developers"
 description: "has_many :developers : web development blog"
 keywords: 
   - Coding
   - Development
   - Internet
   - Programming
-main_title: "has_many :developers"
+
+# authors information
+authors:
+  p1nox: 
+    name: Raul Pino
+    display_name: p1nox
+    web: http://github.com/p1nox
+  anibal: 
+    name: Anibal Rojas
+    display_name: anibal
+    web: http://github.com/p1nox

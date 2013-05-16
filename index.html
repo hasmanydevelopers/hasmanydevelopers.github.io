@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: home
+title: home
 ---
 
 {% assign last_post = site.posts.last %}
@@ -19,8 +20,9 @@ layout: default
     {{ post.excerpt | markdownify }}
   </p>
 
-  <p class="post-info">
-    by <a href="{{ post.author.web }}" target="_new">{{ post.author.name }}</a> on {{ post.date | date: "%B %d, %Y" }}
+  <p class="post-info">    
+    {% assign author = site.authors[post.author] %}
+    by <a href="{{ author.web }}" target="_new">{{ author.display_name }}</a> on {{ post.date | date: "%B %d, %Y" }}
   </p>
 
   {% if last_post==post %}

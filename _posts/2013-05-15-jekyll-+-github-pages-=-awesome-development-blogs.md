@@ -1,18 +1,10 @@
 ---
 layout: posts
-author: 
-  name: p1nox
-  web: http://github.com/p1nox
+author: p1nox
 image: https://dl.dropboxusercontent.com/u/4282792/jekyll-ghp.png
 excerpt: 
   Use [Github Pages](http://pages.github.com/) automatic generator and [Jekyll](http://jekyllrb.com/) for boost your own personal/project static website.
 ---
-
-# {{ page.title }}
-
-<p class="post-info">
-  by <a href="{{ page.author.web }}" target="_new">{{ page.author.name }}</a> on {{ page.date | date: "%B %d, %Y" }}
-</p>
 
 There is a time when a developer want to share his knowledge, or just say a few words, but you realise of a developer's things, originality, simplicity and freedom xD (is it just me?).
 
@@ -26,7 +18,7 @@ There are some original and simple choices to test out:
 
 Here is where jumps [Github Pages](http://pages.github.com/) and the coolest thing is the using of [Jekyll](http://jekyllrb.com/) for it :D
 
-![jekyll + github pages]({{ page.image }})
+![jekyll + github pages](https://dl.dropboxusercontent.com/u/4282792/jekyll-ghp.png)
 
 Uses your Github account (every developer has one) creating a repository for this purpose and interpreting the content of a given branch with Jekyll to load your page.
 
@@ -65,7 +57,3 @@ Here you can read some interesting things about this theme:
 * [Discus Jekyll Installation Instructions](http://help.disqus.com/customer/portal/articles/472138-jekyll-installation-instructions)
 * [Generating html meta data with Jekyll](http://paradigmatic.streum.org/2011/02/generating-html-meta-data-with-jekyll/)
 * [Adding AngularJS search in Jekyll blog](https://gist.github.com/RainerAtSpirit/3076150)
-
-<p class="post-info">
-  by <a href="{{ page.author.web }}" target="_new">{{ page.author.name }}</a> on {{ page.date | date: "%B %d, %Y" }}
-</p>
