@@ -5,7 +5,7 @@ comments: true
 
 <h1>{{ page.title }}</h1>
 
-{% assign author = site.authors[page.author] %}
+{% assign author = site.authors[page.author] %} 
 
 <p class="post-info">
   by <a href="{{ author.web }}" target="_new">{{ author.display_name }}</a> on {{ page.date | date: "%B %d, %Y" }}
@@ -24,8 +24,8 @@ comments: true
     <a class="addthis_counter addthis_bubble_style"></a>
   </div>
 </div>
-<br />
-
+<hr>
+<br>
 {{ content }}
 
 <p class="post-info">

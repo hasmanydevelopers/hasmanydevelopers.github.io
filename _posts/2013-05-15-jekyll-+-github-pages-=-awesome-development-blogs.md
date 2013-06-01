@@ -1,7 +1,7 @@
 ---
 layout: posts
 author: p1nox
-image: https://dl.dropboxusercontent.com/u/4282792/jekyll-ghp.png
+image: "/images/posts/jekyll-ghp.png"
 excerpt: 
   Use [Github Pages](http://pages.github.com/) automatic generator and [Jekyll](http://jekyllrb.com/) for boost your own personal/project static website.
 ---

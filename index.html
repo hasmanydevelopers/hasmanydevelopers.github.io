@@ -25,56 +25,54 @@ title: home
     by <a href="{{ author.web }}" target="_new">{{ author.display_name }}</a> on {{ post.date | date: "%B %d, %Y" }}
   </p>
 
-  {% if last_post==post %}
-    <hr>    
-  {% endif %}
+  <hr>
 
 {% endfor %}
 
 <!-- Pagination links -->
-<div id="post-pagination" class="pagination">
+<div id="post-pagination" class="paginator">
   {% if paginator.previous_page %}
-    <p class="previous">
+    <div class="prev">
       {% if paginator.previous_page == 1 %}
-        <a href="/">Previous</a>
+        <a href="/">Prev</a>
       {% else %}
-        <a href="{{ paginator.previous_page_path }}">Previous</a>
+        <a href="{{ paginator.previous_page_path }}">Prev</a>
       {% endif %}
-    </p>
+    </div>
   {% else %}
-    <p class="previous disabled">
-      <span>Previous</span>
-    </p>
+    <div class="prev disabled">
+      <span>Prev</span>
+    </div>
   {% endif %}
 
   <ul class="pages">
     <li class="page">
       {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
+        <span class="current-page num">1</span>
       {% else %}
-        <a href="/">1</a>
+        <a class="num" href="/">1</a>
       {% endif %}
     </li>
 
     {% for count in (2..paginator.total_pages) %}
       <li class="page">
         {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
+          <span class="current-page num">{{ count }}</span>
         {% else %}
-          <a href="/page{{ count }}">{{ count }}</a>
+          <a class="num" href="/page{{ count }}">{{ count }}</a>
         {% endif %}
       </li>
     {% endfor %}
   </ul>
 
   {% if paginator.next_page %}
-    <p class="next">
+    <div class="next">
       <a href="{{ paginator.next_page_path }}">Next</a>
-    </p>
+    </div>
   {% else %}
-    <p class="next disabled">
+    <div class="next disabled">
       <span>Next</span>
-    </p>
+    </div>
   {% endif %}
 
 </div>
