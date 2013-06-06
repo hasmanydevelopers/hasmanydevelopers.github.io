@@ -1,3 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {  
+  font-family: 'Ruda', sans-serif;
+}
+
 #hmd-logo img {
   border: none;
   box-shadow: none;
@@ -5,10 +23,38 @@
   -moz-box-shadow: none;
   -o-box-shadow: none;
   -ms-box-shadow: none;
+  max-width: 25%;  
+  margin: 0;
+  padding: 0;
+}
+
+#header_wrap {
+  background: #212121;  
+}
+
+#header_wrap .inner {
+  max-width: 940px;
+}
+
+#main_content_wrap {
+  background-color: #e2e2e2;
+  background-image: url("/images/bg_pattern.png");
+}
+#main_content_wrap .inner {
+  max-width: 940px;
+}
+
+#main_content{
+  background-color: #fff;
+  margin-bottom: 80px;
+  margin-top: 40px;
+  border: 1px solid #c2c2c2;
+  padding: 10px 20px 10px 20px;
 }
 
 #footer_wrap .inner {
-  text-align: right;
+  max-width: 940px;
+  text-align: left;
   padding-bottom: 0px;
   padding-top: 10px;
 }
@@ -20,19 +66,20 @@
   -o-box-shadow: none;
   -ms-box-shadow: none;
   width: 100px;
-  margin-top: -100px;
+  margin-top: -72px;
   margin-bottom: 0px;
+  display: inline;
+  padding: 0;
 }
 #footer_wrap p {
-  margin-right: 125px;
+  margin-left: 110px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-size: 12px;
 }
 
 p img {
   margin: 0px;
-}
-
-#project_title {
-  display: none;
 }
 
 #project_tagline {
@@ -40,13 +87,18 @@ p img {
   color: #A4ACAF;
   padding-bottom: 0px;
   margin: 0px;
+  display: inline;
+  float: right;
+  margin-top: 28px;
 }
 
 .post-image {
   margin: 0px;
+  text-align: center;  
 }
 .post-image img {
   margin: 0px;
+  max-width: 50%;
 }
 
 .post-info {
@@ -56,4 +108,27 @@ p img {
 
 #posts-addthis-container {
   margin-top: -32px;
+}
+
+.paginator {
+  text-align: center;
+  margin-top: 45px;
+} 
+.paginator span {
+  display: inline;
+}
+.paginator .prev {
+  margin-right: 0.5em;
+  display: inline;
+}
+.pages, .page {
+  display: inline;
+}  
+.paginator .num {
+  margin: 0.1em;
+  display: inline;
+}
+.paginator .next {
+  margin-left: 0.5em;
+  display: inline;
 }
